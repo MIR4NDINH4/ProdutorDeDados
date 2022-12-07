@@ -1,0 +1,17 @@
+package com.example.projetoestudo.controller;
+import com.example.projetoestudo.model.UsuarioModel;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuarioController {	
+
+	UsuarioModel user = new UsuarioModel();
+
+	@PostMapping(value = "kafkaUsuario")
+	public void kafkaUsuario(){
+		System.out.print("Teste ok!");
+	}
+		
+}

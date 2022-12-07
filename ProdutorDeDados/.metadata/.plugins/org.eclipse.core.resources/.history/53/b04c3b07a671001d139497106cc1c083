@@ -1,0 +1,5 @@
+package com.example.projetoestudo.model;
+
+public class UsuarioModel {
+
+}

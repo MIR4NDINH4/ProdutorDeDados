@@ -1,0 +1,8 @@
+package com.example.projetoestudo.controller;
+
+import com.example.projetoestudo.model.UsuarioModel;
+
+public class UsuarioController {
+	
+	
+}

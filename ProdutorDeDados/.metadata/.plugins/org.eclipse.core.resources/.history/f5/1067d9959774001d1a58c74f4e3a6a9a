@@ -1,0 +1,21 @@
+package com.example.projetoestudo.controller;
+import com.example.projetoestudo.model.UsuarioModel;
+
+import javax.swing.JOptionPane;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuarioController {	
+
+	UsuarioModel user = new UsuarioModel();
+
+	@GetMapping(value = "kafkaUsuario")
+	public void kafkaUsuario(){
+		user.setNome_usuario("André");
+		JOptionPane.showInputDialog(user.getNome_usuario());
+	}
+		
+}

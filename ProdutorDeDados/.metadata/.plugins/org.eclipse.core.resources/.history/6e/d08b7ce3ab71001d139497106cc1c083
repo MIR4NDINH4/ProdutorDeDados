@@ -1,0 +1,17 @@
+package com.example.projetoestudo.controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.projetoestudo.model.UsuarioModel;
+
+@RestController
+public class UsuarioController {	
+	
+	@GetMapping(value = "kafkaUsuario")
+	public void kafkaUsuario(){
+		
+		System.out.println("EndPoint KafkaUsuario Ok");
+	}
+		
+}
