@@ -4,16 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.awt.image.BufferedImage;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ImagemModel {
+public class ImagemMessage {
     private Integer idImagem;
     private Integer idPublicacao;
-    private MultipartFile imagem;
+    private String imagem64;
+    private String extensaoImagem;
+    private String acaoImagem;
 }
